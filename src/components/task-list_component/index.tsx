@@ -12,7 +12,7 @@ function TaskList() {
       <h2>TaskList</h2>
       <ul>
         {tasks.map((item, index) => (
-          <li>
+          <li key={index}>
             <h3>{item.task}</h3>
           </li>
         ))}
